@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="1361.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.TableMenuController">
+   <children>
+      <MFXScrollPane layoutX="533.0" layoutY="57.0" prefHeight="498.0" prefWidth="811.0">
+         <content>
+            <VBox fx:id="list" prefHeight="488.0" prefWidth="800.0" />
+         </content>
+      </MFXScrollPane>
+      <Label layoutX="607.0" layoutY="613.0" text="Total : ">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" layoutX="667.0" layoutY="613.0" prefHeight="21.0" prefWidth="90.0" text="0.0">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="769.0" layoutY="613.0" text="DA">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="944.0" layoutY="603.0" onAction="#valider" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #008000;" text="Valider" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1069.0" layoutY="603.0" onAction="#annuler" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #FF0000;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Accordion fx:id="menu" layoutX="32.0" layoutY="74.0" prefHeight="500.0" prefWidth="420.0" stylesheets="@accordionStyle.css" />
+      <JFXButton buttonType="RAISED" layoutX="1188.0" layoutY="603.0" onAction="#plusItem" prefHeight="21.0" prefWidth="43.0" style="-fx-background-color: #f25b0a;" text="+" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

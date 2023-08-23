@@ -1,0 +1,16 @@
+
+.custom-titled-pane .title {
+    -fx-background-color: #f25b0a;
+    -fx-padding: 10px;
+    -fx-text-fill: white; /* Change text color to white */
+}
+
+.custom-titled-pane .content {
+
+}
+
+.custom-titled-pane .title .arrow-button {
+    -fx-padding: 0 10px 0 0;
+    -fx-background-color: transparent; /* Make arrow button background transparent */
+    -fx-arrow-color: white; /* Change arrow color to white */
+}

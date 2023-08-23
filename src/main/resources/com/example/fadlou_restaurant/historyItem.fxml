@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.HistoryItemController">
+   <children>
+      <Text fx:id="cmd" layoutX="29.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" layoutX="156.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="244.0" layoutY="18.0" onAction="#consulter" style="-fx-background-color: #f25b0a;" text="Consulter" textFill="WHITE" />
+   </children>
+</Pane>

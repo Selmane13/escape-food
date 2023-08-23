@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXClippedPane?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.RegisterController">
+   <children>
+      <JFXClippedPane layoutX="-1.0" prefHeight="720.0" prefWidth="418.0" style="-fx-background-color: #28282b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="768.0" prefWidth="495.0">
+               <children>
+                  <ImageView fitHeight="372.0" fitWidth="365.0" layoutX="22.0" layoutY="-102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@escapeFood.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="117.0" layoutY="232.0" text="Nom d'utilisateur" textFill="WHITE" AnchorPane.bottomAnchor="516.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="232.0">
+                     <font>
+                        <Font name="Trebuchet MS" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="116.0" layoutY="322.0" text="Mot de passe" textFill="WHITE" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="322.0">
+                     <font>
+                        <Font name="Trebuchet MS" size="16.0" />
+                     </font>
+                  </Label>
+                  <MFXTextField fx:id="name" layoutX="117.0" layoutY="263.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="250.0" AnchorPane.bottomAnchor="465.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="263.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></MFXTextField>
+                  <MFXPasswordField fx:id="password" layoutX="117.0" layoutY="353.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="250.0" AnchorPane.bottomAnchor="375.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="353.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></MFXPasswordField>
+                  <JFXButton fx:id="login" buttonType="RAISED" contentDisplay="CENTER" layoutX="162.0" layoutY="487.0" onAction="#login" prefHeight="49.0" prefWidth="157.0" style="-fx-background-color: #f25b0a;" text="Connexion" textAlignment="CENTER" textFill="#fffbfb" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="487.0">
+                     <font>
+                        <Font name="Trebuchet MS" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </JFXClippedPane>
+      <ImageView fitHeight="750.0" fitWidth="948.0" layoutX="449.0" layoutY="49.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="418.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

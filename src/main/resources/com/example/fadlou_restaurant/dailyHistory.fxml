@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.DailyHistoryController">
+   <children>
+      <MFXScrollPane layoutX="27.0" layoutY="40.0" prefHeight="390.0" prefWidth="340.0">
+         <content>
+            <VBox fx:id="hystoryItems" prefHeight="384.0" prefWidth="328.0" />
+         </content>
+      </MFXScrollPane>
+      <MFXScrollPane layoutX="426.0" layoutY="40.0" prefHeight="390.0" prefWidth="340.0">
+         <content>
+            <VBox fx:id="historyItem" prefHeight="385.0" prefWidth="334.0" />
+         </content>
+      </MFXScrollPane>
+      <Label layoutX="58.0" layoutY="451.0" text="Total : ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" layoutX="147.0" layoutY="451.0" prefHeight="27.0" prefWidth="74.0" text="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="451.0" text="DA">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="439.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="612.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="676.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="439.0" layoutY="451.0" text="Profit :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="profit" layoutX="528.0" layoutY="451.0" prefHeight="27.0" prefWidth="74.0" text="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="451.0" text="DA">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

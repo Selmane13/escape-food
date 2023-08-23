@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.AllHistoryController">
+   <children>
+      <MFXScrollPane layoutX="33.0" layoutY="30.0" prefHeight="404.0" prefWidth="330.0">
+         <content>
+            <VBox fx:id="allHistoryItems" prefHeight="393.0" prefWidth="325.0" />
+         </content>
+      </MFXScrollPane>
+      <JFXButton buttonType="RAISED" layoutX="411.0" layoutY="272.0" onAction="#consulterCommandes" prefHeight="52.0" prefWidth="190.0" style="-fx-background-color: #f25b0a;" text="Consulter les commandes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <VBox layoutX="389.0" layoutY="61.0" prefHeight="160.0" prefWidth="222.0" spacing="50.0">
+         <children>
+            <HBox spacing="30.0">
+               <children>
+                  <Label text="Date :">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label text="Total vendu :">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalVendu">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label text="Profit nette :">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profit">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="611.0" layoutY="201.0" text="DA">
+         <font>
+            <Font name="Trebuchet MS" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="131.0" text="DA">
+         <font>
+            <Font name="Trebuchet MS" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

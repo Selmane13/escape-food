@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fadlou_restaurant.PlusItemController">
+    <children>
+      <VBox layoutX="133.0" layoutY="21.0" spacing="10.0">
+         <children>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+                  <font>
+                      <Font name="Trebuchet MS" size="18.0" />
+                  </font>
+              </Text>
+              <MFXTextField fx:id="name" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="167.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix de Vente(DA)">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Text>
+            <MFXTextField fx:id="prixVente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="167.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+         </children>
+      </VBox>
+        <JFXButton buttonType="RAISED" layoutX="151.0" layoutY="182.0" onAction="#addItem" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #dd571c;" text="Ajouter" textFill="WHITE" />
+    </children>
+</AnchorPane>
